@@ -1,8 +1,14 @@
+---
+description: >-
+  Configure Android SDK to validate purchases, get subscription updates, and
+  send push notifications
+---
+
 # Android SDK
 
-[Adapty Android SDK](https://github.com/adaptyteam/AdaptySDK-Android) is currently in Beta. However, it supports most of [iOS features](https://github.com/adaptyteam/AdaptySDK-iOS).
-
 ![An example of Android settings](../.gitbook/assets/screenshot-2020-05-05-at-15.43.09.png)
+
+\*\*\*\*
 
 ### **Service Account Key File**
 
@@ -60,6 +66,8 @@ This key is used for server-side purchase verification. Obtaining the key is a b
 
     12. Optional. It takes at least 24 hours for changes to take effect but there's a [hack](https://stackoverflow.com/a/60691844). In [Google Play Console](https://play.google.com/apps/publish/), open Your App Dashboard -&gt; **Store Presence** -&gt; **In-app Products**. Change the description of any product, click **Save**. Everything should be working now, you can revert in-app changes. If not, make sure **Google Play Android Developer API** is enabled in [Google Cloud Platform API Library](https://console.cloud.google.com/apis/library/androidpublisher.googleapis.com).
 
+
+
 ### Real-time developer notifications \(RTDN\)
 
 Real-time developer notifications \(RTDN\) allow receiving updates the moment they occur in Play Store, tracking refunds, and more. We highly recommend setting them up.
@@ -77,6 +85,8 @@ Copy and paste it's value into the **Topic name** field found at App Dashboard -
 If you use Old \(Classic\) Google Play Console, set up RTDN at App Dashboard -&gt; **Development Tools** -&gt; **Services & APIs**.
 
 ![](../.gitbook/assets/cleanshot-2020-09-15-at-19.05.08-2x.png)
+
+
 
 ### Push Notifications
 

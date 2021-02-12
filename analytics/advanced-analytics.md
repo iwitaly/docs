@@ -1,8 +1,8 @@
 ---
 description: >-
-  Out-of-the-box ready subscription analytics for most important metrics: mrr,
-  revenue, trials, cancellations, purchases, arppu. All platforms: iOS, Android,
-  Web.
+  Out-of-the-box ready subscription analytics for most important metrics: MRR,
+  revenue, trials, cancellations, purchases, ARPPU. All platforms: iOS, Android,
+  Web
 ---
 
 # Advanced Analytics
@@ -13,15 +13,17 @@ Install [Adapty SDK](https://github.com/adaptyteam/AdaptySDK-iOS) and start anal
 
 ![](../.gitbook/assets/analytics.jpg)
 
-## Metrics
+
+
+### Metrics
 
 Advanced Analytics allows you to track the following metrics.
 
-### Revenue
+#### Revenue
 
 Total money received from both subscriptions and one-time purchases. Does not include revenue from subscriptions and purchases that were refunded afterward.
 
-### Monthly Recurring Revenue \(MRR\)
+#### Monthly Recurring Revenue \(MRR\)
 
 The measure of the predictable and recurring revenue components of your subscription business. Calculated as following:
 
@@ -39,13 +41,13 @@ Basically, MRR shows revenue from all active subscriptions normalized to one mon
 E.g. if there are 2 active yearly subscriptions with price $240 and 10 monthly subscriptions with price $30,  
 MMR = 240 \* 2 / 12 + 30 \* 10 / 1 = $340
 
-### ARPPU
+#### ARPPU
 
 An average revenue per paid user. Calculated as `revenue / number of users who paid`  
 If revenue this day is $1000, and there were 50 users who made at least one purchase,  
 ARPPU = 1000 / 50 = $20
 
-### Subscriptions
+#### Subscriptions
 
 **Events**  
 The number of subscription activations, including renewals.  
@@ -54,7 +56,7 @@ The number of currently active subscriptions.
 **Status**  
 The number of active subscriptions segmented by [auto-renew status](advanced-analytics.md#sub-trial-auto-renewal-off) which indicates whether or not this subscription will be renewed to the next period.
 
-### Trials
+#### Trials
 
 **Events**  
 The number of free trial activations.  
@@ -63,11 +65,11 @@ The number of currently active free trials.
 **Status**  
 The number of active trials segmented by [auto-renew status](advanced-analytics.md#sub-trial-auto-renewal-off) which indicates whether or not this trial will be converted to a paid subscription.
 
-### Grace Period
+#### Grace Period
 
 The number of subscriptions that entered the Grace Period due to the billing issue. During the Grace Period subscription is still active while the store tries to receive payment. After Grace Period ends without successful renewal, the subscription enters [Billing Issue](advanced-analytics.md#billing-issues) state.
 
-### Billing Issues
+#### Billing Issues
 
 **Events**  
 The number of subscriptions that entered the Billing Issue state.  
@@ -78,52 +80,52 @@ Subscription usually enters the Billing Issue state if the store is unable to re
 While the Billing Issue state is taking place, the subscription is not active.  
 If the Grace Period feature is enabled \(in the store settings\), that Billings Issue state becomes active only after the [Grace Period](advanced-analytics.md#grace-period) expires.
 
-### Churned Subscriptions
+#### Churned Subscriptions
 
 The number of subscription and trial cancellations segmented by cancellation reasons.  
-This metric does not include Auto Renewal [on](advanced-analytics.md#sub-trial-restored)/[off](advanced-analytics.md#subscription-trial-cancelled) state change cases, and shows only the subscriptions that are already ended \(expired\).
+This metric does not include Auto-Renewal [on](advanced-analytics.md#sub-trial-restored)/[off](advanced-analytics.md#subscription-trial-cancelled) state change cases and shows only the subscriptions that are already ended \(expired\).
 
-### Refunds
+#### Refunds
 
 **Events**  
 The number of refunded purchases and subscriptions.  
 **Money**  
 Amount of money that was refunded.
 
-### **Subscription/Trial Cancelled**
+#### **Subscription/Trial Cancelled**
 
-The number of subscriptions/trials that entered Auto Renewal Off state.  
-Auto Renewal Off state means that the user switched off auto renewal of subscription/trial, so it won't be automatically renewed to the next period.
+The number of subscriptions/trials that entered Auto-Renewal Off state.  
+Auto-Renewal Off state means that the user switched off auto-renewal of subscription/trial, so it won't be automatically renewed to the next period.
 
-### **Sub/Trial Restored**
+#### **Sub/Trial Restored**
 
-The number of subscriptions/trials that went back Auto Renewal On state.  
-Auto Renewal On state means that subscription/trial will be automatically renewed to the next period. Auto Renewal On state is the default renewal state of the auto-renewable subscription.
+The number of subscriptions/trials that went back Auto-Renewal On state.  
+Auto-Renewal On state means that subscription/trial will be automatically renewed to the next period. Auto-Renewal On state is the default renewal state of the auto-renewable subscription.
 
-## Filters
+
+
+### Filters
 
 Advanced Analytics provides the following filters.
 
-### Countries
+#### Countries
 
 Filter metrics by user's store country \(if available, otherwise IP country is used\).
 
-### Products
+#### Products
 
 Filter metrics by product \(both subscriptions and one-time purchases are available\).
 
-### Platforms
+#### Platforms
 
 Filter metrics by platform \(iOS/Android\).
 
-### A/B tests
+#### A/B tests
 
 Filter metrics by A/B tests that are associated with purchases.  
 In case your A/B tests have multiple [revisions](../purchase-infrastructure/ab-tests.md#versioning-edition) \(versions\), they are marked as "Rev. X" so you can choose the specific one.
 
-### Attribution
+#### Attribution
 
 Filter metrics by Attribution fields like Status, Channel, Campaign, etc.
-
-
 

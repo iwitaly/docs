@@ -1,3 +1,7 @@
+---
+description: Steps to check before releasing the app with Adapty SDK
+---
+
 # Release Checklist
 
 We’re thrilled you’ve decided to use Adapty! We want you to get the best results from the very first build. Here’s a quick overview of the steps needed for successful integration. Steps 1-4 are usually required, 5-7 are highly recommended;\)

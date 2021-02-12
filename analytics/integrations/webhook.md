@@ -1,6 +1,10 @@
+---
+description: Learn how to set up integration with your webhook
+---
+
 # Webhook
 
-Forward [subscription events](events.md) to your own web server.
+Forward [subscription events](./#events) to your own web server.
 
 ![](../../.gitbook/assets/image%20%2827%29.png)
 
@@ -24,9 +28,11 @@ with the same `check_string`
 
 After that Adapty sends POST events about your users.
 
+
+
 ### Event structure
 
-Refer to the [Events section](events.md) to understand which events Adapty sends.
+Refer to the [Events section](./#events) to understand which events Adapty sends.
 
 Each event is wrapped into the following structure
 
@@ -47,13 +53,15 @@ Where
 | :--- | :--- | :--- |
 | **profile\_id** | str | Adapty user ID. |
 | **customer\_user\_id** | str | Developer user ID. For example, it can be your user UUID, email, or any other ID. [Learn more](https://github.com/adaptyteam/AdaptySDK-iOS#configure-your-app) about how to pass it using SDK. Null if you didn't set it. |
-| **event\_type** | str | Lower cased [event name](events.md). |
+| **event\_type** | str | Lower cased [event name](./#events). |
 | **event\_api\_version** | int | Current Adapty API version. The current value is _1._ |
-| **event\_properties** | json | JSON of [event properties](events.md#properties). |
+| **event\_properties** | json | JSON of [event properties](./#properties). |
+
+
 
 ### Event names mapping
 
-You can change the mapping from default Adapty [event](events.md) names to your own
+You can change the mapping from default Adapty [event](./#events) names to your own
 
 ![Changing event name](../../.gitbook/assets/image%20%2838%29.png)
 

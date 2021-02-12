@@ -1,3 +1,10 @@
+---
+description: >-
+  Learn how to set up integration with 3rd party analytics services. Adapty
+  supports AppsFlyer, Amplitude, Facebook Ads, Adjust, Branch, Mixpanel, and
+  AppMetrica.
+---
+
 # 3rd party analytics
 
 Apple and Google send subscription events directly to the server using [Subscription Status URL](../../settings/ios-sdk.md#app-store-connect-subscription-status-url) and [Real-time developer notifications \(RTDN\)](../../settings/android-sdk.md#real-time-developer-notifications-rtdn). Therefore, apps can not send events to analytical systems correctly and on-time. For example, if the user subscribed and then didn't open the app, without a server developer will get zero information about subscription status. 
@@ -13,6 +20,8 @@ Each integration is native, so Adapty maps some properties to system-native.
 {% hint style="info" %}
 If you leave the Event Name blank, Adapty won't send it.
 {% endhint %}
+
+
 
 ### [AppsFlyer](https://app.adapty.io/integrations/appsflyer)
 
@@ -31,12 +40,12 @@ Open [AppsFlyer](https://hq1.appsflyer.com/auth/login) and navigate to your app 
 ![Finding Dev Key in AppsFlyer](../../.gitbook/assets/image%20%2874%29.png)
 
 {% hint style="info" %}
-AppsFlyer doesn't have a Sandbox mode for server2server integration. So you need a different application/account in AppsFlyer to for Sandbox Dev Key.
+AppsFlyer doesn't have a Sandbox mode for server2server integration. So you need a different application/account in AppsFlyer for Sandbox Dev Key.
 
 **DO NOT USE YOUR MAIN DEV KEY AS A SANDBOX KEY**
 {% endhint %}
 
-Adapty maps some [events](events.md) to AppsFlyer [standard events](https://support.appsflyer.com/hc/en-us/articles/115005544169-Rich-in-app-events-for-Android-and-iOS#event-types) by default. With such configuration, AppsFlyer can [further send events](https://support.appsflyer.com/hc/en-us/articles/208439256-In-App-Events-Postback-Configuration#event-mapping) to each ad network that you use without additional setup.
+Adapty maps some [events]() to AppsFlyer [standard events](https://support.appsflyer.com/hc/en-us/articles/115005544169-Rich-in-app-events-for-Android-and-iOS#event-types) by default. With such configuration, AppsFlyer can [further send events](https://support.appsflyer.com/hc/en-us/articles/208439256-In-App-Events-Postback-Configuration#event-mapping) to each ad network that you use without additional setup.
 
 #### SDK configuration.
 
@@ -66,6 +75,8 @@ extension AppDelegate: AppsFlyerLibDelegate {
 {% endtab %}
 {% endtabs %}
 
+
+
 ### [Mixpanel](https://app.adapty.io/integrations/mixpanel)
 
 To integrate Adapty with Mixpanel you need only one variable: Mixpanel access token. Find the token in your Mixpanel project. If you need help, [here's](https://help.mixpanel.com/hc/en-us/articles/115004502806-Find-Project-Token-) the official docs.
@@ -78,11 +89,13 @@ Adapty also accumulates revenue from each user.
 
 #### SDK configuration.
 
-[Use](https://github.com/adaptyteam/AdaptySDK-iOS/blob/master/Documentation/AdvancedUsage.md#update-your-user-attributes) `Adapty.updateProfile()` method to set `mixpanelUserId`.  If not set, Adapty uses your user ID \(`customerUserId`\) or if it's null, Adapty ID. Make sure that the user id you use to send data to Mixpanel from your app is the same you send to Adapty.
+[Use](https://github.com/adaptyteam/AdaptySDK-iOS/blob/master/Documentation/AdvancedUsage.md#update-your-user-attributes) `Adapty.updateProfile()` method to set `mixpanelUserId`.  If not set, Adapty uses your user ID \(`customerUserId`\) or if it's null Adapty ID. Make sure that the user id you use to send data to Mixpanel from your app is the same one you send to Adapty.
+
+
 
 ### [Amplitude](https://app.adapty.io/integrations/amplitude)
 
-The same way as with Mixpanel, Adapty ****maps properties to Amplitude-native properties.
+In the same way as with Mixpanel, Adapty ****maps properties to Amplitude-native properties.
 
 You need to enter API Key into Adapty. To find a token go to your Project settings in Amplitude. In case you need help refer to [official docs](https://help.amplitude.com/hc/en-us/articles/360035522372-Manage-Data#h_52731f6f-5c45-4c28-b1e1-5c0074f83ee5).
 
@@ -90,11 +103,13 @@ You need to enter API Key into Adapty. To find a token go to your Project settin
 
 #### SDK configuration.
 
-[Use](https://github.com/adaptyteam/AdaptySDK-iOS/blob/master/Documentation/AdvancedUsage.md#update-your-user-attributes) `Adapty.updateProfile()` method to set `amplitudeDeviceId` or `amplitudeUserId`.  If not set, Adapty uses your user ID \(`customerUserId`\) or if it's null, Adapty ID. Make sure that the user id you use to send data to Amplitude from your app is the same you send to Adapty.
+[Use](https://github.com/adaptyteam/AdaptySDK-iOS/blob/master/Documentation/AdvancedUsage.md#update-your-user-attributes) `Adapty.updateProfile()` method to set `amplitudeDeviceId` or `amplitudeUserId`.  If not set, Adapty uses your user ID \(`customerUserId`\) or if it's null Adapty ID. Make sure that the user id you use to send data to Amplitude from your app is the same you send to Adapty.
+
+\*\*\*\*
 
 ### \*\*\*\*[**Facebook Ads**](https://app.adapty.io/integrations/facebookanalytics)\*\*\*\*
 
-Facebook Ads integration is different from all others. Usually, companies create ads using Facebook and would like to optimize campaigns based on customers behaviour. Optimization is available only for Facebook [standard events](https://www.facebook.com/business/help/402791146561655?id=1205376682832142). That's why editing event names is not available for Facebook Ads integration. Adapty properly maps customers event into Facebook events in the following way
+Facebook Ads integration is different from all others. Usually, companies create ads using Facebook and would like to optimize campaigns based on customers behavior. Optimization is available only for Facebook [standard events](https://www.facebook.com/business/help/402791146561655?id=1205376682832142). That's why editing event name is not available for Facebook Ads integration. Adapty properly maps customers event into Facebook events in the following way
 
 | Adapty event | Facebook Ads event |
 | :--- | :--- |
@@ -120,6 +135,8 @@ Scroll down and find a Client Token. Also, find the App ID in the header.
 
 ![App ID and Client Token](../../.gitbook/assets/image%20%2819%29.png)
 
+
+
 ### [Adjust](https://app.adapty.io/integrations/adjust)
 
 Adjust works a bit different from other platforms. You need to manually create events in Adjust dashboard, get event tokens, and copy-paste them to appropriate events in Adapty.
@@ -129,7 +146,7 @@ Open your Adjust dashboard and you'll see your apps.
 ![App in Adjust](../../.gitbook/assets/image%20%2852%29.png)
 
 {% hint style="info" %}
-You may have different Adjust applications for iOS and Android, so in Adapty you have two independent sections for that. If you have only one Adjust app, just fill the same information
+You may have different Adjust applications for iOS and Android, so in Adapty you have two independent sections for that. If you have only one Adjust app, just fill in the same information
 {% endhint %}
 
 Copy App Token and paste it to Adapty.
@@ -166,6 +183,8 @@ extension AppDelegate: AdjustDelegate {
 {% endtab %}
 {% endtabs %}
 
+
+
 ### [Branch](https://app.adapty.io/integrations/branch)
 
 Open your Branch [Account Settings](https://dashboard.branch.io/account-settings/profile) and find the **Branch Key** field. Use it for Key test or Key live in Adapty dashboard. In Branch, switch between Live and Tests environments for the appropriate key.
@@ -196,7 +215,7 @@ Branch.getInstance().logout()
 {% endtab %}
 {% endtabs %}
 
-Next, pass the attribution you receive from initialize method of Branch iOS SDK to Adapty.
+Next, pass the attribution you receive from initializing method of Branch iOS SDK to Adapty.
 
 {% tabs %}
 {% tab title="iOS \(Swift\)" %}
@@ -212,6 +231,8 @@ Branch.getInstance().initSession(launchOptions: launchOptions) { (data, error) i
 {% endtab %}
 {% endtabs %}
 
+
+
 ### [AppMetrica](https://app.adapty.io/integrations/appmetrica)
 
 Open AppMetrica [apps list](https://appmetrica.yandex.ru/application/list). Choose the app you want to send events to and go to Settings. Copy **Application ID** and **Post API key** and use them to set up the integration in Adapty.
@@ -222,7 +243,7 @@ AppMetrica syncs events every 4 hours, so it may take some time for events to ap
 
 #### SDK configuration.
 
-[Use](https://github.com/adaptyteam/AdaptySDK-iOS/blob/master/Documentation/AdvancedUsage.md#update-your-user-attributes) `Adapty.updateProfile()` method to set `appmetricaProfileId` or `appmetricaDeviceId`.  If not set, Adapty uses your user ID \(`customerUserId`\). Make sure that the user id you use to send data to AppMetrica from your app is the same you send to Adapty. These links should help to set up a user id for AppMetrica in your app.
+[Use](https://github.com/adaptyteam/AdaptySDK-iOS/blob/master/Documentation/AdvancedUsage.md#update-your-user-attributes) `Adapty.updateProfile()` method to set `appmetricaProfileId` or `appmetricaDeviceId`.  If not set, Adapty uses your user ID \(`customerUserId`\). Make sure that the user id you use to send data to AppMetrica from your app is the same one you send to Adapty. These links should help to set up a user id for AppMetrica in your app.
 
 * [Set profile ID](https://yandex.ru/dev/appmetrica/doc/mobile-sdk-dg/concepts/ios-operations-docpage/#profileId) iOS;
 * [Get device ID](https://yandex.ru/dev/appmetrica/doc/mobile-sdk-dg/ios/swift/ref/YMMYandexMetrica-docpage/#method_detail__method_requestAppMetricaDeviceIDWithCompletionQueue) iOS;

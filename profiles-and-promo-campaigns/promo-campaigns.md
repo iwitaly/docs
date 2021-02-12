@@ -1,3 +1,9 @@
+---
+description: >-
+  Re-engage existing and churned subscribers with discount campaigns in push
+  notifications
+---
+
 # Promo Campaigns
 
 Promo Campaigns designed for upselling in your app. Send promo offers with automated campaigns in push notifications. To start:
@@ -12,21 +18,25 @@ Promo offers are sent _only once per campaign per user._ So you can't accidental
 
 ![](../.gitbook/assets/promo_campaign_table.png)
 
+### 
+
 ### Before you start
 
 {% hint style="warning" %}
-Be sure to [add your certificate](../settings/ios-sdk.md#push-notifications) for sending Push notifications. Without it Promo campaigns won't work
+Make sure to [add your certificate](../settings/ios-sdk.md#push-notifications) for sending Push notifications. Without it, Promo campaigns won't work
 {% endhint %}
+
+### 
 
 ### Creation
 
-[Add your push certificate](../settings/ios-sdk.md#push-notifications), create a [segment](segments.md) and [Container](../purchase-infrastructure/ab-tests.md#creation).
+[Add your push certificate](../settings/ios-sdk.md#push-notifications), create a [segment](segments.md), and [Container](../purchase-infrastructure/ab-tests.md#creation).
 
 ![Promo campaign creation](../.gitbook/assets/image%20%2857%29.png)
 
-There are two ways to send a push with promo offer:
+There are two ways to send a push with a promo offer:
 
-1. Action-based. Choose one of 13 [events](../analytics/integrations/events.md) and Adapty will send promo offer right after the event
+1. Action-based. Choose the [event](../analytics/integrations/#events) and Adapty will send a promo offer right after the event was triggered
 2. One-time. No auto trigger is set, you can only manually trigger sending a push from a table view
 
 Also, you can set a delay for sending push notifications. This could be especially useful in the action-based campaigns so users don't feel tracked so much.

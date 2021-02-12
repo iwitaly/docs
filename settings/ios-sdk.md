@@ -1,3 +1,9 @@
+---
+description: >-
+  Configure iOS SDK to validate purchases, get subscription updates, and send
+  push notifications
+---
+
 # iOS SDK
 
 For [Adapty iOS SDK](https://github.com/adaptyteam/AdaptySDK-iOS) to work you need to enter a couple of keys.

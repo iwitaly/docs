@@ -1,4 +1,8 @@
-# Import Historical Data to Adapty
+---
+description: Learn how to import historical data to Adapty via CSV file
+---
+
+# Importing Historical Data to Adapty
 
 After you install [Adapty SDK](https://github.com/adaptyteam/AdaptySDK-iOS) and release the app, you can find your users and subscribers in [Profiles](profiles-and-promo-campaigns/profiles.md). But what if you have legacy infrastructure and want to migrate to Adapty? Or just want to see your existing data in Adapty?
 
@@ -42,6 +46,8 @@ Export data to a CSV file with a format in [this](https://docs.google.com/spread
 | **google\_is\_subscription** | 1\|0 |
 
 The only required field is **user\_id**. However, to see all transaction history you need to specify **apple\_receipt\_encoded** or **google\_product\_id+google\_purchase\_token+google\_is\_subscription,** without them Adapty won't be able to fetch transactions.
+
+
 
 ### Import data to Adapty
 

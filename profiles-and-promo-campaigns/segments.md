@@ -1,6 +1,12 @@
+---
+description: >-
+  Create user groups based on different properties, and use them for Promo
+  Campaigns and targeted A/B tests
+---
+
 # Segments
 
-Segment is a group of users with common properties.
+A Segment is a group of users with common properties.
 
 ![](../.gitbook/assets/cohorts.jpg)
 
@@ -10,11 +16,15 @@ Segments are used in [promo campaigns](promo-campaigns.md), [A/B Tests](../purch
 * Subscription cancelled users
 * Trial cancelled users
 
+
+
 ### Creation
 
 To create a segment, write a segment name, and choose attributes.
 
 ![Segment creation](../.gitbook/assets/image%20%2811%29.png)
+
+
 
 ### Available attributes
 

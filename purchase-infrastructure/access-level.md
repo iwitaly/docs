@@ -1,3 +1,9 @@
+---
+description: >-
+  Control features available to the customers of your app across multiple
+  platforms and without hardcoding products
+---
+
 # Access Level
 
 Access levels allow you to control features available to the customers of your app without hardcoding product ids. Every time the user makes a purchase, Adapty unlocks access to the app for the specific period \(subscriptions\) or for a lifetime \(lifetime purchases\).

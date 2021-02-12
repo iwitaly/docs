@@ -1,5 +1,5 @@
 ---
-description: How to set up Slack and Email reports with your performance metrics.
+description: Get useful insights about your app business into your inbox or Slack
 ---
 
 # Reports
@@ -11,7 +11,9 @@ Reports provide you with the most relevant information in your inbox or Slack:
 * Active subscribers
 * Active trials
 
-You can find many more metrics in [Analytics](basic-analytics.md).
+You can find many more metrics in [Analytics](advanced-analytics.md).
+
+
 
 ### Slack integration
 
@@ -23,7 +25,9 @@ Hit `Add bot to Slack` button and you'll be prompt with Slack Auth screen.
 
 Choose a channel to post and you're ready to go.
 
-## Email reports
+
+
+### Email reports
 
 Email integration is even simpler than Slack, just choose time periods for reports.
 

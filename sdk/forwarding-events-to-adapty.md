@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how to forward subscription events from Apple and Google to Adapty if
+  you can't use our built-in solution
+---
+
 # Forwarding Events to Adapty
 
 Apple and Google provide a way to send subscription events updates the moment they occur on their servers. It's very important to send them to Adapty to avoid delays in processing subscription status, and therefore providing the best experience for your customers.

@@ -1,3 +1,7 @@
+---
+description: Configuring fundamental aspects of your app
+---
+
 # App Settings
 
 Settings is a place where you configure how Adapty works with your apps both for iOS and Android apps. In settings you can find:

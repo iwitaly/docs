@@ -1,3 +1,9 @@
+---
+description: >-
+  Configuring products from App Store and Play Store, working with iOS
+  promotional offers
+---
+
 # Product
 
 Adapty encapsulates products from App Store and Play Store into a single internal product. This allows you to use a single Adapty product across all platforms, instead of using each vendor's products.
@@ -100,6 +106,4 @@ To use promotional offers, you have to [upload Subscription Key](../settings/ios
 To add a promotional offer to your product click _Add Offer_ and enter its **Name** and **Offer ID** from App Store.
 
 ![Adding Apple promotional offer](../.gitbook/assets/cleanshot-2021-01-22-at-19.49.22.png)
-
-
 

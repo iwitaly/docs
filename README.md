@@ -28,11 +28,11 @@ Analytics for the app economy. Detailed metrics related to your app monetization
 
 {% page-ref page="analytics/basic-analytics.md" %}
 
-Adapty can send [subscription events](analytics/integrations/events.md) to 3rd party analytics: Mixpanel, Amplitude, Facebook Ads, AppMetrica, AppsFlyer, Adjust, Branch, and custom Webhook.
+Adapty can send [subscription events](analytics/integrations/#events) to 3rd party analytics: Mixpanel, Amplitude, Facebook Ads, AppMetrica, AppsFlyer, Adjust, Branch, and custom Webhook.
 
 {% page-ref page="analytics/integrations/" %}
 
-[Mobile SDK for purchases](https://github.com/adaptyteam/AdaptySDK-iOS). Adapty performs server-side receipt validation for you and syncs your customers for both iOS and Android. It also works in Observer mode, so you can use SDK without changing your existing purchases infrastructure.
+[Mobile SDK for purchases](https://github.com/adaptyteam/AdaptySDK-iOS). Adapty performs server-side receipt validation for you and syncs your customers for both iOS and Android. It also works in Observer mode, so you can use SDK without changing your existing purchase infrastructure.
 
 ### 
 

@@ -1,3 +1,7 @@
+---
+description: Name your app and get keys for SDK and API
+---
+
 # General
 
 In the General section, you can configure common settings for your app

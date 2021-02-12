@@ -1,10 +1,9 @@
 # Table of contents
 
 * [Getting Started](README.md)
-* [Set up Adapty](set-up-adapty.md)
 * [Release Checklist](release-checklist.md)
 * [FAQ](faq.md)
-* [Import Historical Data to Adapty](import-historical-data-to-adapty.md)
+* [Importing Historical Data to Adapty](import-historical-data-to-adapty.md)
 
 ## SDK
 
@@ -67,9 +66,8 @@
 * [Cohorts](analytics/cohorts.md)
 * [Reports](analytics/reports.md)
 * [Integrations](analytics/integrations/README.md)
-  * [Events](analytics/integrations/events.md)
-  * [Webhook](analytics/integrations/webhook.md)
   * [3rd party analytics](analytics/integrations/3rd-party-analytics.md)
+  * [Webhook](analytics/integrations/webhook.md)
 * [Event Feed](analytics/event-feed.md)
 
 ## Profiles and Promo campaigns

@@ -1,3 +1,9 @@
+---
+description: >-
+  Customize the paywalls of your app using different products, messages, and
+  designs, all without new app releases
+---
+
 # Paywall
 
 A Paywall is a set of products. Paywalls allow you to dynamically change the products shown to your customers without app releases.

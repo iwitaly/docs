@@ -9,7 +9,7 @@ description: >-
 If you have a functioning subscription system and want to give Adapty SDK a quick try, you can use Observer mode. With just one line of code you can:
 
 * get insights by using our top-class [analytics](../../../analytics/advanced-analytics.md);
-* send subscription [events](../../../analytics/integrations/events.md) to your [server](../../../analytics/integrations/webhook.md) and [3rd party services](../../../analytics/integrations/3rd-party-analytics.md);
+* send subscription [events]() to your [server](../../../analytics/integrations/webhook.md) and [3rd party services](../../../analytics/integrations/3rd-party-analytics.md);
 * view and analyze customers in Adapty [CRM](../../../profiles-and-promo-campaigns/profiles.md).
 
 Adapty SDK will automatically collect all transactions and will be sending subscription events. To turn on Observer mode, just set **`observerMode`** to **`true`** when activating Adapty:

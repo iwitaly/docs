@@ -22,7 +22,7 @@ override fun onCreate() {
 Adapty configurational options:
 
 * **Public SDK key** \(required\): found in your app settings in [Adapty Dashboard](https://app.adapty.io/settings/general) `App settings` &gt; `General`. 
-* **Customer user ID** \(optional\): an identifier of the user in your system. We send it in subscription and analytical [events](../../../analytics/integrations/events.md), to attribute events to the right profile. You can also find customers by **`customerUserId`** in the [Profiles](../../../profiles-and-promo-campaigns/profiles.md) section. If you don't have user IDs in your app, you can omit this parameter or pass null. If you don't have a user ID at the time of Adapty initialization, you can set it later using **`.identify()`** method. Read more in the [Identifying Users](android-sdk-identifying-users.md#setting-customer-user-id-after-configuration) section.
+* **Customer user ID** \(optional\): an identifier of the user in your system. We send it in subscription and analytical [events](), to attribute events to the right profile. You can also find customers by **`customerUserId`** in the [Profiles](../../../profiles-and-promo-campaigns/profiles.md) section. If you don't have user IDs in your app, you can omit this parameter or pass null. If you don't have a user ID at the time of Adapty initialization, you can set it later using **`.identify()`** method. Read more in the [Identifying Users](android-sdk-identifying-users.md#setting-customer-user-id-after-configuration) section.
 
 {% hint style="warning" %}
 Make sure you use the **Public SDK key** for Adapty initialization, the **Secret key** should be used for [server-side API](../../../server-side-api/getting-started.md) only.

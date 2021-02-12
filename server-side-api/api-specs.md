@@ -1,8 +1,16 @@
+---
+description: >-
+  Learn how to get and manipulate with user's data, including subscription
+  status, from your server
+---
+
 # API Specs
 
 **Base URL**:  https://api.adapty.io/api/v1/sdk 
 
-## Authorization
+
+
+### Authorization
 
 Each API request must be signed with the[ secret token](../settings/app-settings.md).
 
@@ -12,7 +20,9 @@ When calling API:
 * Use JSON payload in request body for POST and PATCH requests
 * All request must set header **Content-Type**: application/json
 
-## **Requests**
+\*\*\*\*
+
+### **Requests**
 
 ### Prolong/grant a subscription for a user
 
@@ -167,7 +177,9 @@ Sample response:
 }
 ```
 
-Learn more about responses in [Objects](api-objects.md)
+Learn more about responses in the [Objects](api-objects.md) section**.**
+
+
 
 ### Revoke subscription from a user
 
@@ -190,6 +202,8 @@ Request parameters
 
 Revokes user's subscription by setting **unsubscribed\_at** to current datetime, and **expires\_at** to a maximum of current **starts\_at** and current datetime \(to avoid **expires\_at** being less than **starts\_at\).** If there is a [transaction](api-specs.md#transaction) associated with this paid access level, this transaction expiration is also set to the new **expires\_at** value. If **is\_refund** is **true**, the transaction is marked as a refund, and revenue is set to zero.
 
+
+
 ### Get info about a user
 
 ```text
@@ -203,6 +217,8 @@ Path params
 | **profile\_id** | str | ✅ | ❌ | Adapty profile ID or developer's internal ID |
 
 Response example is the same as for [Prolong/grant a subscription for a user](api-specs.md#prolong-grant-a-subscription-for-a-user).
+
+
 
 ### Create a user
 
@@ -225,6 +241,8 @@ Sample request
 ```
 
 You can also set user's attributes the same way as in the PATCH method.
+
+
 
 ### Set the user's attribute
 
@@ -319,6 +337,4 @@ Sample request
     }
 }
 ```
-
-
 

@@ -1,3 +1,9 @@
+---
+description: >-
+  Increase the revenue by testing different offers, messages, and designs
+  simultaneously, all without new app releases
+---
+
 # A/B Test
 
 A/B tests help you to increase the revenue. You can show different products or designs to users, compare the metrics, and find out the best-selling combination.

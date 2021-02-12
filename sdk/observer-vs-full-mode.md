@@ -1,3 +1,7 @@
+---
+description: Compare Observer and Full mode and choose the right one for your case
+---
+
 # Observer vs Full
 
 There are two ways to integrate Adapty SDK: Observer mode and Full mode.
@@ -22,5 +26,5 @@ Full mode adds multiple features on top of Observer:
 2. A/B testing;
 3. Promo Campaigns.
 
-Integration takes several hours, and in most cases, you should use Full mode as a complete solution for your app purchases infrastructure.
+Integration takes several hours, and in most cases, you should use Full mode as a complete solution for your app purchase infrastructure.
 

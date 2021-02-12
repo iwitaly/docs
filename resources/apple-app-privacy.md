@@ -1,8 +1,12 @@
+---
+description: What to indicate in Apple App Privacy when using Adapty SDK
+---
+
 # Apple App Privacy
 
 Starting December 8, 2020, Apple requires a privacy disclosure for all new apps and app updates. Adapty is a third-party dependency to your app, therefore you’ll need to properly disclose the ways you are using Adapty in regards to user's data.
 
-## Data Types
+### Data Types
 
 ✅ = Required  
 👀 = May be required \(see details below\)  
@@ -94,7 +98,7 @@ Starting December 8, 2020, Apple requires a privacy disclosure for all new apps 
 
 
 
-## Required Data Types
+### Required Data Types
 
 ### Purchases
 
