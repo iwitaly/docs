@@ -9,7 +9,7 @@ Add Adapty to your `pubspec.yaml` file:
 {% code title="pubspec.yaml" %}
 ```yaml
 dependencies:
-  adapty_flutter:
+  adapty_flutter: ^0.2.0
 ```
 {% endcode %}
 
