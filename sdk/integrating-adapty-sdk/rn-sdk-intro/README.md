@@ -8,8 +8,6 @@ description: >-
 
 You can find open-source Adapty Android SDK on [GitHub](https://github.com/adaptyteam/AdaptySDK-React-Native).
 
-
-
 ### Requirements
 
 * React Native 0.60
