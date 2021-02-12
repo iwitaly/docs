@@ -9,7 +9,7 @@ description: >-
 
 
 
-Install [Adapty SDK](https://github.com/adaptyteam/AdaptySDK-iOS) and start analyzing real-time metrics of your iOS or Android app with advanced filters, such as ad network, ad campaign, country, A/B test, andq more.
+Install [Adapty SDK](https://github.com/adaptyteam/AdaptySDK-iOS) and start analyzing real-time metrics of your iOS or Android app with advanced filters, such as ad network, ad campaign, country, A/B test, and more.
 
 ![](../.gitbook/assets/analytics.jpg)
 

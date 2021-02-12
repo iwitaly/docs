@@ -44,6 +44,12 @@
     * [Displaying Products](sdk/integrating-adapty-sdk/flutter-sdk-intro/flutter-sdk-displaying-products.md)
     * [Making Purchases](sdk/integrating-adapty-sdk/flutter-sdk-intro/flutter-sdk-making-purchases.md)
     * [Subscription Status](sdk/integrating-adapty-sdk/flutter-sdk-intro/flutter-sdk-subscription-status.md)
+  * [React Native](sdk/integrating-adapty-sdk/rn-sdk-intro/README.md)
+    * [Installation](sdk/integrating-adapty-sdk/rn-sdk-intro/rn-sdk-installation.md)
+    * [Configuration](sdk/integrating-adapty-sdk/rn-sdk-intro/rn-sdk-configuration.md)
+    * [Displaying Products](sdk/integrating-adapty-sdk/rn-sdk-intro/rn-sdk-displaying-products.md)
+    * [Making Purchases](sdk/integrating-adapty-sdk/rn-sdk-intro/rn-sdk-making-purchases.md)
+    * [Subscription Status](sdk/integrating-adapty-sdk/rn-sdk-intro/rn-sdk-subscription-status.md)
 * [Observer vs Full](sdk/observer-vs-full-mode.md)
 * [Forwarding Events to Adapty](sdk/forwarding-events-to-adapty.md)
 

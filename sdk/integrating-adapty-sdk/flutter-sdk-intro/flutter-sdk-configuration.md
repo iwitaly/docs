@@ -1,7 +1,7 @@
 ---
 description: >-
   Learn how to import Adapty Flutter SDK in your app, configure it, and set up
-  debugging
+  logging
 ---
 
 # Configuration
@@ -63,7 +63,7 @@ Make sure you use the **Public SDK key** for Adapty initialization, the **Secret
 
 
 
-### Debugging
+### Logging
 
 Adapty logs errors and other important information to help you understand what is going on. There are three levels available:
 
