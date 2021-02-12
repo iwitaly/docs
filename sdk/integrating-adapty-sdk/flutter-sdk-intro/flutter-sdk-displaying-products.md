@@ -50,36 +50,19 @@ Since the paywalls are configured remotely, the available products, the number o
 
 ### Paywall analytics
 
-{% hint style="warning" %}
-By default, Adapty SDK sends**`paywallShow`** event which is accumulated in visitors metrics after every **`.getPaywalls()`** call. It works automatically, but it's incorrect because the user not necessarily was shown the paywall.
+Adapty helps you to measure the performance of the paywalls. We automatically collect all the [metrics](../../../purchase-infrastructure/paywall.md#metrics) related to purchases except for paywall views. This is because only you know when the paywall was shown to a customer.
 
-We strongly recommend disable automatic tracking and send these events manually for precise metric calculations.
-{% endhint %}
-
-First, disable automatic tracking by setting the flag **`AdaptyAutomaticPaywallsScreenReportingEnabled`** to **`false`** in **`Info.plist`** \(iOS\) and  **`AndroidManifest.xml`** \(Android\):
+Whenever you show a paywall to your user, call **`.logShowPaywall(paywall)`** to log the event, and it will be accumulated in the paywall metrics.
 
 {% tabs %}
-{% tab title="Info.plist" %}
-```markup
-<dict>
-    ...
-    <key>AdaptyAutomaticPaywallsScreenReportingEnabled</key>
-    <false/>
-</dict>
-```
-{% endtab %}
-
-{% tab title="AndroidManifest.xml" %}
-```markup
-<application ...>
-       ...
-       <meta-data
-              android:name="AdaptyAutomaticPaywallsScreenReportingEnabled"
-              android:value="false" />
-</application>
+{% tab title="Flutter" %}
+```dart
+await Adapty.logShowPaywall(paywall);
 ```
 {% endtab %}
 {% endtabs %}
 
-Next, whenever you show a paywall to your user, call **`Adapty.logShowPaywall(paywall)`** to log **`paywallShow`** event related to your paywall.
+Request parameters:
+
+* **Paywall** \(required\): a **`PaywallModel`** object.
 
