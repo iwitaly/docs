@@ -19,7 +19,7 @@ This model contains information about the product.
 | currencyCode | str | The ISO 4217 currency code for the user's localization \(USD, EUR\). |
 | currencySymbol | str | The currency symbol for the user's localization. |
 | regionCode | str | The ISO 3166 ALPHA-2 region code of the user's localization. \(US, DE\). |
-| subscriptionPeriod |  | A [**`ProductSubscriptionPeriodModel`**](ios-sdk-models.md#productsubscriptionperiodmodel) object. The period details for products that are subscriptions. |
+| subscriptionPeriod |  | A [**`ProductSubscriptionPeriodModel`**](ios-sdk-models.md#productsubscriptionperiodmodel) object. Duration of subscription products. |
 | subscriptionGroupIdentifier | str | The identifier of the subscription group from App Store Connect to which the subscription belongs. |
 | introductoryOfferEligibility | bool | User's eligibility for the introductory offer. Check this property before displaying info about [introductory offers](https://developer.apple.com/documentation/storekit/in-app_purchase/subscriptions_and_offers/implementing_introductory_offers_in_your_app), for example, free trials.  |
 | promotionalOfferEligibility | bool | User's eligibility for the introductory offer. Check this property before displaying info about [promotional offers](https://developer.apple.com/app-store/subscriptions/#promotional-offers). |

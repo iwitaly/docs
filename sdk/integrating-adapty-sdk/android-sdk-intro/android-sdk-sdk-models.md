@@ -17,9 +17,10 @@ This model contains information about the product.
 | price | decimal | The price of the product in the user's local currency. |
 | currencyCode | str | The ISO 4217 currency code for the user's localization \(USD, EUR\). |
 | currencySymbol | str | The currency symbol for the user's localization. |
-| subscriptionPeriod |  | A [**`ProductSubscriptionPeriodModel`**](android-sdk-sdk-models.md#productsubscriptionperiodmodel) object. The period details for products that are subscriptions. |
+| subscriptionPeriod |  | A [**`ProductSubscriptionPeriodModel`**](android-sdk-sdk-models.md#productsubscriptionperiodmodel) object. Duration of subscription products. |
 | introductoryOfferEligibility | bool | User's eligibility for the introductory offer. Check this property before displaying info about introductory offers, for example, free trials.  |
 | promotionalOfferEligibility | bool | User's eligibility for the introductory offer. Check this property before displaying info about promotional offers. |
+| freeTrialPeriod |  | A [**`ProductSubscriptionPeriodModel`**](android-sdk-sdk-models.md#productsubscriptionperiodmodel) object. The duration of the trial period. |
 | introductoryDiscount |  | A [**`ProductDiscountModel`**](android-sdk-sdk-models.md#productdiscountmodel) object, containing introductory price information for the product. |
 | skuDetails |  | [**`SkuDetails`**](https://developer.android.com/reference/com/android/billingclient/api/SkuDetails) assigned to this product. |
 | paywallABTestName | str | Parent A/B test name |
@@ -128,7 +129,7 @@ This model contains information about the user's subscription.
 | isActive | bool | Whether the subscription is active. |
 | vendorProductId | str | The identifier of the product in Google Play. |
 | vendorTransactionId | str | Transaction id from Google Play. |
-| vendorOriginalTransactionId | str | Original transaction id from Google Play. For auto-renewable subscription, this will be the id of the first transaction in the subscription. |
+| vendorOriginalTransactionId | str | Original transaction id from Google Play. For an auto-renewable subscription, this will be the id of the first transaction in the subscription. |
 | store | str | The store of the purchase. The possible values are: **`app_store`**, **`play_store`** , **`adapty`**. |
 | activatedAt | ISO 8601 datetime | The time when the subscription was activated. |
 | startsAt | ISO 8601 datetime | The time when the subscription has started \(could be in the future\). |
