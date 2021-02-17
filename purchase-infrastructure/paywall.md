@@ -187,7 +187,7 @@ Every time the products or custom JSON payload are changed, the new version of t
 
 ### Metrics
 
-Adapty collects plenty of metrics to help you better measure the performance of the paywalls. All metrics are updated in real-time, except for the visitors, which are updated once every several minutes. All metrics except for the visitors are attributed to the product within the paywall.
+Adapty collects plenty of metrics to help you better measure the performance of the paywalls. All metrics are updated in real-time, except for the views, which are updated once every several minutes. All metrics, except for the views, are attributed to the product within the paywall.
 
 ![Paywall metrics](../.gitbook/assets/cleanshot-2021-01-23-at-01.55.13.png)
 
@@ -196,8 +196,8 @@ Adapty collects plenty of metrics to help you better measure the performance of 
   * Trial conversions of trials that were activated on the paywall;
   * Down/up/cross-grades of the subscription on the paywall;
   * Subscription restores on the paywall \(e.g. if the subscription was expired without auto-renewal\).
-* The **conversion rate \(CR\) to purchases** is the number of purchases divided by the number of visitors. 10 purchases / 100 visitors = 10% CR purchases.
-* The **conversion rate \(CR\) to trials** is the number of trials started divided by the number of visitors. 30 trials / 100 visitors = 30% CR trials.
+* The **conversion rate \(CR\) to purchases** is the number of purchases divided by the number of views. 10 purchases / 100 views = 10% CR purchases.
+* The **conversion rate \(CR\) to trials** is the number of trials started divided by the number of views. 30 trials / 100 views = 30% CR trials.
 * **Purchases** are the sum of the following transactions \(renewals are not included\):
   * New purchases made on the paywall;
   * Trial conversions of trials that were activated on the paywall;
@@ -205,7 +205,7 @@ Adapty collects plenty of metrics to help you better measure the performance of 
   * Subscription restores on the paywall \(e.g. if the subscription was expired without auto-renewal\).
 * **Trials** are the number of activated trials
 * **Trials cancelled** are the number of trials with auto-renewal switched off. It happens when the user manually unsubscribes from the trial.
-* **Visitors** are the number of views of the paywall. If the user visits the paywall two times, this will be counted as two visits.
+* **Views** are the number of views of the paywall. If the user visits the paywall two times, this will be counted as two visits.
 
 {% hint style="warning" %}
 Make sure to send paywall views to Adapty using **.logShowPaywall\(\)** method. Otherwise, paywall views will not be accounted for in the metrics and conversions will be irrelevant.
