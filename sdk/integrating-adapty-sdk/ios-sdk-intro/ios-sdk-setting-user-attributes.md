@@ -34,6 +34,7 @@ The allowed keys **`<Key>`** of **`ProfileParameterBuilder()`** and the values *
 | email | String up to 30 characters |
 | phoneNumber | String up to 15 characters |
 | facebookUserId | String up to 30 characters |
+| facebookAnonymousId | String up to 30 characters |
 | amplitudeUserId | String up to 30 characters |
 | amplitudeDeviceId | String up to 30 characters |
 | mixpanelUserId | String up to 30 characters |
