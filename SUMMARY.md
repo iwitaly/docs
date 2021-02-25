@@ -22,6 +22,7 @@
     * [Observer Mode](sdk/integrating-adapty-sdk/ios-sdk-intro/ios-sdk-observer-mode.md)
     * [Method Swizzling](sdk/integrating-adapty-sdk/ios-sdk-intro/ios-sdk-method-swizzling.md)
     * [SwiftUI](sdk/integrating-adapty-sdk/ios-sdk-intro/swiftui.md)
+    * [Error handling](sdk/integrating-adapty-sdk/ios-sdk-intro/error-handling.md)
     * [SDK Models](sdk/integrating-adapty-sdk/ios-sdk-intro/ios-sdk-models.md)
   * [Android](sdk/integrating-adapty-sdk/android-sdk-intro/README.md)
     * [Installation](sdk/integrating-adapty-sdk/android-sdk-intro/android-sdk-installation.md)
