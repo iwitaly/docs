@@ -14,7 +14,7 @@ Install [Adapty SDK](https://github.com/adaptyteam/AdaptySDK-iOS) and get access
 
 Here is what it looks like:
 
-![](../.gitbook/assets/snimok-ekrana-2020-12-26-v-16.54.56.png)
+![Cohorts grouped by month with daily changes](../.gitbook/assets/image%20%28101%29.png)
 
 ### How is this table calculated?
 
@@ -28,11 +28,13 @@ For example, for a user to end up in a Jul 2020 cohort, their install has to occ
 
 Columns show the revenue each cohort has generated over time. Each "month" is a 30-day window, and each "day" is a 24-hour window.
 
-For instance, **Month 0** lasts from the time of install to 30\*24=720 hours from that; **Month 1** from 720 hours after the time of install to 1440 hours, and so on.
+For instance, **Month 1** lasts from the time of install to 30\*24=720 hours from that; **Month 2** from 720 hours after the time of install to 1440 hours, and so on.
 
-**Note: "**Months" are calculated for each user individually. For a user who installed the app on July 1st at 3:00 PM, "Month 0" will last until July 31st at 3:00 PM. If they make a transaction on July 31st at 3:05 PM, it will end up in the Month 1 column.
+{% hint style="info" %}
+**"**Months" are calculated for each user individually. For a user who installed the app on July 1st at 3:00 PM, "Month 1" will last until July 31st at 3:00 PM. If they make a transaction on July 31st at 3:05 PM, it will end up in the Month 2 column.
+{% endhint %}
 
-Simply put, Month 0 for a Jul 2020 cohort isn't exactly "August", it's actually a period from July 31st up to August 30th.
+Simply put, Month 1 for a Jul 2020 cohort isn't exactly "August", it's actually a period from July 31st up to August 30th.
 
 #### "Total" column and row
 
@@ -43,8 +45,6 @@ Total row shows the total revenue for each column. This is useful to understand 
 #### Incomplete data
 
 The last cell in every row is always white as it has incomplete data \(as the 30-day window for the cohort has not yet passed\). Be careful while making decisions based on incomplete data.
-
-
 
 ### Filters
 
