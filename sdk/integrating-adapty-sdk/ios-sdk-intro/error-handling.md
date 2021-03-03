@@ -1,4 +1,11 @@
-# Error handling
+---
+description: >-
+  In this topic we describe how you can handle most of the SKError's errors
+  e.g.: SKErrorPaymentCancelled, SKErrorInvalidOfferIdentifier, SKErrorUnknown,
+  etc.
+---
+
+# Error handling \(SKError, NSError, Error\)
 
 Adapty SDK has it's own wrapper for all kind of errors, called **`AdaptyError`**. Basically, every error returned by an SDK is **`AdaptyError`**. It has two useful properties: **`originalError`** and **`adaptyErrorCode`**, described below.
 
