@@ -29,7 +29,7 @@ And then add the dependency to your module-level **`build.gradle`** at the end o
 ```groovy
 dependencies {
     ...
-    implementation 'com.github.adaptyteam:AdaptySDK-Android:0.8.6'
+    implementation 'com.github.adaptyteam:AdaptySDK-Android:0.9.0'
 }
 ```
 {% endcode %}
